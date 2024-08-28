@@ -6,11 +6,11 @@
 using namespace std; 
 
 int main () {
-    Player* wizard = new Player("Wizard", 100, 5);
-    Player* warrior = new Player("Warrior", 100, 4);
+    Wizard wizard("Wizard", 100, 5, 15);
+    Warrior warrior ("Warrior", 100, 4, "sword");
 
-    wizard->attack(warrior, 1);
-    warrior->attack(wizard, 10);
+    wizard.castSpell(&warrior);
+    warrior.swingWeapon(&wizard);
 
     
     return 0; 

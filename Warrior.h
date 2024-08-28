@@ -8,6 +8,7 @@ class Warrior : public Player {
     private: 
         string weapon;
     public: 
+        Warrior(string name, int health, int damage, string weapon);
         void swingWeapon(Player* opponent); 
         string setWeapon(string weapon);
         string getWeapon();

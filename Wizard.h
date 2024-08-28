@@ -7,6 +7,7 @@ class Wizard : public Player {
     private:
         int mana; 
     public: 
+        Wizard(string name, int health, int damage, int mana);
         void castSpell(Player* opponent); 
         int setMana(int mana);
         int getMana();
