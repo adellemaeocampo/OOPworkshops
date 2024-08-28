@@ -9,10 +9,10 @@ using namespace std;
 
 void Wizard::castSpell(Player* opponent){
     opponent->takeDamage(mana); 
-    cout << name << " casts spell on " << opponent->getName() << "for " << damage << "damage.\n" <<endl;
+    cout << name << " casts spell on " << opponent->getName() << "for " << damage << " damage.\n" <<endl;
 }
 
-int Wizard::setMana(int mana){
+int Wizard::setMana(int mana){ 
     this->mana = mana; 
     return 0;
 }

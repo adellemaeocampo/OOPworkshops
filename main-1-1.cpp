@@ -12,7 +12,6 @@ int main () {
     wizard.castSpell(&warrior);
     warrior.swingWeapon(&wizard);
 
-    
     return 0; 
 }
 
