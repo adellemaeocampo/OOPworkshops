@@ -16,7 +16,7 @@ class Player {
         void takeDamage(int damage); 
         string setName(string name);
         int setHealth(int health);
-        int setdamage(int damage)
+        int setdamage(int damage);
         string getName();
         int getHealth();
         int getDamage();

@@ -1,4 +1,4 @@
-#include "Player.h"
+#include "player.h"
 #include <iostream> 
 
 using namespace std; 
@@ -12,14 +12,23 @@ void Player::attack(Player* opponent, int damage) {
 
 void Player::takeDamage(int damage){
     health -= damage; 
-    cout << name << "takes" << damage << "damage. Remaining health: " << health <<endl;
+    cout << name << " takes " << damage << " damage. Remaining health: " << health <<endl;
 }
 
-string Player::setName(string name) : name(name){}
+string Player::setName(string name){
+    this->name = name;
+    return 0;
+}
 
-int Player::setHealth(int health) : health(health){}
+int Player::setHealth(int health){
+    this->health = health;
+    return 0;
+}
         
-int Player::setdamage(int damage) : damage(damage){}
+int Player::setdamage(int damage){
+    this->damage = damage;
+    return 0;
+}
 
 string Player::getName(){
     return name; 

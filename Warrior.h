@@ -1,7 +1,7 @@
 #ifndef WARRIOR_H
 #define WARRIOR_H
 
-#include "Player.h"
+#include "player.h"
 #include <string>
 
 class Warrior : public Player { 
@@ -11,6 +11,6 @@ class Warrior : public Player {
         void swingWeapon(Player* opponent); 
         string setWeapon(string weapon);
         string getWeapon();
-}
+};
 
 #endif 
