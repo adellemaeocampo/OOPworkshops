@@ -1,7 +1,7 @@
 #include "Fridge.h"
 
 Fridge::Fridge(){
-    powerRating = 0; 
+    powerRating = 0;
     volume = 0;
 }
 
