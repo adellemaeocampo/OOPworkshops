@@ -11,7 +11,7 @@ class House {
     public:
         House();
         House(int numAppliances);
-        bool addAppliances(Appliance* appliance);
+        bool addAppliance(Appliance* appliance);
         double getTotalPowerConsumption();
         ~House();
 };

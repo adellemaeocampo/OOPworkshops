@@ -14,7 +14,7 @@ House::House(int numAppliances){
 
 }
 
-bool House::addAppliances(Appliance* appliance){
+bool House::addAppliance(Appliance* appliance){
 
     if(numAppliances < maxAppliances){
         appliances[numAppliances] = appliance;
