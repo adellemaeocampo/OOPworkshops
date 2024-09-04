@@ -14,9 +14,9 @@ int main () {
     Fridge* miniFridge = new Fridge(5, 5.5);
     TV* samsung = new TV(5, 3.5);
 
-    mansion->addAppliances(twoDoor);
-    mansion->addAppliances(miniFridge);
-    mansion->addAppliances(samsung); 
+    mansion->addAppliance(twoDoor);
+    mansion->addAppliance(miniFridge);
+    mansion->addAppliance(samsung); 
 
     cout << "here is the power consumption: " << mansion->getTotalPowerConsumption() <<endl;
 
