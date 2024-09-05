@@ -7,7 +7,7 @@ House::House(){
 
 House::House(int numAppliances){
     this->maxAppliances = numAppliances;
-    appliances = new Appliance*[maxAppliances];
+    appliances = new Appliance*[numAppliances];
     for(int i=0; i<maxAppliances; i++){
         appliances[i] = nullptr; 
     }
@@ -15,13 +15,12 @@ House::House(int numAppliances){
 }
 
 bool House::addAppliance(Appliance* appliance){
-
     if(numAppliances < maxAppliances){
         appliances[numAppliances] = appliance;
         numAppliances ++;
         return true;
     } else {
-        return false; 
+        return false;
     }
 
 }
