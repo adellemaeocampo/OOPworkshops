@@ -22,3 +22,33 @@ int main () {
 
     return 0; 
 }
+
+/*
+#include "Appliance.h"
+#include "Fridge.h"
+#include "TV.h"
+#include "House.h"
+
+#include <iostream> 
+
+using namespace std; 
+
+int main() {
+    House* house = new House(3); 
+
+    Fridge* mini = new Fridge(10, 4.5);
+    TV* LG = new TV(5, 3.5);
+    TV* Samsung = new TV(5, 3.5);
+
+    house->addAppliance(mini);
+    house->addAppliance(LG);
+    house->addAppliance(Samsung); 
+
+    cout << "total power consumption: " << house->getTotalPowerConsumption() <<endl;
+
+    return 0; 
+
+
+}
+
+*/
